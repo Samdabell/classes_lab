@@ -13,6 +13,7 @@ class Library
         return book
       end
     end
+    # return nil
   end
 
   def get_rental_details(title)
@@ -21,6 +22,10 @@ class Library
         return book[:rental_details]
       end
     end
+    # info = "Book not found."
+    # book = get_book(title)
+    # info = book[:rental_details] if book != nil
+    # return info
   end
 
   def add_book(title)
